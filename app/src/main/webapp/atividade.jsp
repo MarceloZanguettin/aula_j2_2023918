@@ -6,13 +6,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aplicação</title>
+        <title>Atividade</title>
     </head>
     <body>
-        <h1>Olá Mundo!!!</h1>
-        <c:forEach var="item" begin="1" end="20" step="1" >
-            <c:if test="${(item % 3) == 0}">
-                ${item}<br />
+        <h1>Atividade!</h1>
+        <c:forEach var="item" begin="1" end="50" step="1" >
+            <c:if test="${(item % 5) == 0}">
+                5 x ${item/5} = ${item}<br />
             </c:if>
         </c:forEach>
     </body>
